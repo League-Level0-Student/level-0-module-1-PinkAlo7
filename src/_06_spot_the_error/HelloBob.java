@@ -10,10 +10,12 @@ public static void main(String[] args) {
 	// Change one line of code to fix this program.
 	
 	String name = JOptionPane.showInputDialog("What is your name?");
+	if (name.equalsIgnoreCase("bob"))
+	{
 	
-	if (name == "Bob") {
 		JOptionPane.showMessageDialog(null, "Hello Bob");
-	} else {
+	
+         }else{
 		JOptionPane.showMessageDialog(null, "You're not Bob!!!");
 	}
 }
